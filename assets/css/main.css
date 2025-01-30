@@ -1484,7 +1484,7 @@ input, select, textarea {
 	.bordered-feature-image {
 		display: block;
 		background: #fff url("images/bg04.png");
-		padding: 10px;
+		padding: 5px;
 		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
 		margin: 0 0 1.5em 0;
 		outline: 0;
@@ -1494,6 +1494,8 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
+
+	
 
 	.button-large {
 		background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
@@ -2054,4 +2056,19 @@ input, select, textarea {
 
 	}
 
+
+	.feature-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Медиазапрос для мобильных устройств */
+    @media (max-width: 767px) {
+        .feature-img {
+            max-width: 70%; /* Уменьшаем изображения на мобильных устройствах */
+            margin: 0 auto;
+        }
+    }
 	
